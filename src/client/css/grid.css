@@ -1,0 +1,29 @@
+.Grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem;
+}
+
+.Grid-cell {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 1rem;
+  vertical-align: top;
+  width: 100%;
+}
+
+@media (min-width: 30em) {
+  .Cell-1of3 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 40em) {
+  .Cell-1of2 {
+    width: 50%;
+  }
+
+  .Cell-1of3 {
+    width: calc(100% / 3);
+  }
+}

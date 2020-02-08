@@ -1,0 +1,64 @@
+:root {
+  --color-primary: #d3d6db;
+  --color-hover: #415f9d;
+  --color-active: #233b6e;
+  --link-color: #233b6e;
+  --link-color-hover: #415f9d;
+  --font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+  --text-primary: #555;
+  --text-primary-dark: #212121;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--text-primary, #444);
+  font: 200 100%/1.5
+    var(--font-family, 'Helvetica Neue', 'Helvetica', sans-serif);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: 0.3s color ease;
+  will-change: color;
+}
+
+a:hover {
+  color: var(--link-color-hover);
+  text-decoration: underline;
+}
+
+a,
+div,
+li,
+p,
+span {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-primary-dark);
+}
+
+h1,
+h3 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 1.9rem;
+}
+
+p {
+  margin: 1rem 0;
+}

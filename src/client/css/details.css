@@ -1,0 +1,19 @@
+.Details-desc {
+  margin: 0;
+  padding: 0;
+}
+
+.Details-descItem {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+
+.Details-descItem:after {
+  content: '\00b7';
+  padding-left: 0.5rem;
+}
+
+.Details-descItem:last-child:after {
+  content: '';
+  padding-left: 0;
+}

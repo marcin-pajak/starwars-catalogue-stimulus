@@ -4,8 +4,10 @@
     <%- include('layout/header'); %>
   </head>
   <body>
-    <h1><%= message %></h1>
-    <h2><%= error.status %></h2>
-    <pre><%= error.stack %></pre>
+    <div class="Wrapper">
+      <h1><%= message %></h1>
+      <h2><%= error.status %></h2>
+      <div><pre><%= error.stack %></pre></div>
+    </div>
   </body>
 </html>
