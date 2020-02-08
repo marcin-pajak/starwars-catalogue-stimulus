@@ -1,0 +1,17 @@
+.Description-group {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.Description-key {
+  margin: 0 1rem 0 0;
+}
+
+.Description-key:after {
+  content: ':';
+}
+
+.Description-value {
+  flex-grow: 1;
+  margin: 0;
+}

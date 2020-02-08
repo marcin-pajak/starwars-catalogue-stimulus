@@ -10,7 +10,7 @@
         <ul class="List Grid">
           <% data.results.map(person => { %>
           <li class="Grid-cell Cell-1of2">
-            <%- include('components/CharacterCard', {person}); %>
+            <%- include('components/CharacterCard', {getIdFromUrl, person}); %>
           </li>
           <% }); %>
         </ul>

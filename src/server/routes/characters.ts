@@ -2,6 +2,7 @@ import express from 'express';
 import { Response } from 'node-fetch';
 
 import { apiCall, API_URL } from '../helpers/apiCall';
+import { getIdFromUrl } from '../helpers/getIdFromUrl';
 
 const router = express.Router();
 
@@ -12,6 +13,7 @@ router.get('/', async (_: express.Request, res: express.Response) => {
 
   res.render('index', {
     data,
+    getIdFromUrl,
   });
 });
 

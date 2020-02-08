@@ -1,4 +1,4 @@
-<a class="Card" href="#">
+<a class="Card" href="<%= `/character/${getIdFromUrl(person.url)}` %>">
   <h3 class="Card-title"><%= person.name %></h3>
   <ul class="Card-details Details-desc List">
     <li class="Details-descItem">Born: <%= person.birth_year %></li>

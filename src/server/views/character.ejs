@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+  <head>
+    <%- include('layout/header'); %>
+    <script src="/main.js"></script>
+  </head>
+  <body>
+    <div class="Wrapper">
+      <p><a href="/" class="Link Link--back">Go back to catalogue</a></p>
+      <main class="Detail" itemScope itemType="http://schema.org/Person">
+        <meta itemProp="height" content="<%= person.height %>" />
+        <h1 class="Detail-title" itemProp="name">
+          <%= person.name %>
+        </h1>
+        <h3 class="Detail-subtitle">Details:</h3>
+        <dl class="Detail-description">
+          <%- include('components/DescriptionGroup', { 
+            key: 'Born',
+            value: person.birth_year 
+          }); %> 
+          <%- include('components/DescriptionGroup', {
+            key: 'Gender', 
+            value: person.gender,
+            itemProp: 'gender',
+          }); %> 
+          <%-include('components/DescriptionGroup', {
+            key: 'Eye color', 
+            value: person.eye_color
+          }); %>
+          <%- include('components/DescriptionGroup', {
+            key: 'Hair color', 
+            value: person.hair_color
+          }); %> 
+          <%- include('components/DescriptionGroup', {
+            key: 'Skin color', 
+            value: person.skin_color
+          }); %> 
+          <%- include('components/DescriptionGroup', {
+            key: 'Home planet', 
+            value: planet.name,
+            itemProp: 'birthPlace',
+          }); %>
+        </dl>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.Detail {
+  text-align: left;
+}
+
+.Detail-title {
+  margin: 3rem 0 1.5rem;
+}
+
+.Detail-subtitle {
+  margin: 2rem 0 1rem;
+}
+
+.Detail-description {
+  margin: 0.5rem 1rem 1rem 2rem;
+  padding: 0;
+}

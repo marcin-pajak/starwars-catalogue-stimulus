@@ -1,0 +1,9 @@
+<div class="Description-group">
+  <dt class="Description-key"><%= key %></dt>
+  <dd 
+    class="Description-value u-textColor--primary" 
+    <%= typeof itemProp === 'string' ? `itemprop="${itemProp}"` : '' %>
+  >
+    <%= value %>
+  </dd>
+</div>

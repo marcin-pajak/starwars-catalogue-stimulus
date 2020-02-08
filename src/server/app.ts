@@ -27,6 +27,7 @@ app.use(
 );
 
 app.use('/', routes.characters);
+app.use('/character', routes.character);
 
 // Catch 404 and forward to error handler
 app.use(
