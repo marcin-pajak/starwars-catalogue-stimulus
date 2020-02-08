@@ -20,13 +20,18 @@
   "dependencies": {
     "ejs": "^3.0.1",
     "express": "^4.17.1",
-    "http-errors": "^1.7.3"
+    "fetch-cached": "^2.0.3",
+    "http-errors": "^1.7.3",
+    "node-cache": "^5.1.0",
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.2",
     "@types/fs-extra": "^8.0.1",
     "@types/http-errors": "^1.6.3",
     "@types/node": "^13.7.0",
+    "@types/node-cache": "^4.2.5",
+    "@types/node-fetch": "^2.5.4",
     "@types/shelljs": "^0.8.6",
     "fs-extra": "^8.1.0",
     "nodemon": "^2.0.2",
