@@ -7,6 +7,7 @@
 @import './css/typography.css';
 @import './css/button.css';
 @import './css/details.css';
+@import './css/input.css';
 @import './css/link.css';
 @import './css/list.css';
 @import './css/wrapper.css';
@@ -14,6 +15,7 @@
 @import './css/card.css';
 @import './css/description.css';
 @import './css/detail.css';
+@import './css/search.css';
 
 @import './css/grid.css';
 @import './css/utils.css';

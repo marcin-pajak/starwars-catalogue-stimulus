@@ -1,0 +1,22 @@
+.Input {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-family: var(--font-family);
+  padding: 1rem;
+  margin: 0.75rem;
+}
+
+.Input--primary {
+  border: 1px solid var(--color-primary);
+  color: #0b1b36;
+  transition: border-color .3s ease;
+  will-change: border-color;
+}
+
+.Input--primary:hover {
+  border-color: var(--color-hover);
+}
+
+.Input--primary:focus {
+  border-color: var(--color-focus);
+}

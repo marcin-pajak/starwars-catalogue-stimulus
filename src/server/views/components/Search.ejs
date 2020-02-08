@@ -1,0 +1,23 @@
+<section class="Search">
+  <form action="<%= action %>" class="Search-form" method="GET">
+    <fieldset class="Search-fields">
+      <legend class="Search-legend">
+        <%= typeof legend == 'undefined' ? 'Search' : legend %>
+      </legend>
+      <div class="Search-row">
+        <input
+          aria-label="<%= ariaLabel %>"
+          class="Search-input Input Input--primary"
+          name="<%= name %>"
+          placeholder="<%= typeof placeholder == 'undefined' ?  'type...' : placeholder %>"
+          required
+          type="text"
+          value="<%= search %>"
+        />
+        <button class="Search-submit Button Button--primary">
+          <%= typeof submit == 'undefined' ? 'search' : submit %>
+        </button>
+      </div>
+    </fieldset>
+  </form>
+</section>

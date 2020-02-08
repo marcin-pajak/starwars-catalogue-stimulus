@@ -1,0 +1,37 @@
+.Button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s color ease, 0.3s border-color ease, 0.3s background ease,
+    transform 0.2s ease-out;
+  will-change: background, border-color, color, transform;
+}
+
+.Button[disabled] {
+  opacity: 0.21;
+}
+
+.Button--primary {
+  border: 1px solid var(--link-color);
+  color: #0b1b36;
+  display: inline-block;
+  line-height: 1.2;
+  padding: 1rem;
+  margin: 0.75rem;
+}
+
+.Button--primary:hover,
+.Button--primary:focus {
+  color: #fff;
+  background: var(--color-active);
+  border-color: var(--color-active);
+}
+
+.Button--primary:active,
+.Button--primary.is-active {
+  transform: translate(1px, 2px);
+}

@@ -1,0 +1,32 @@
+.Search {
+  margin: 2rem 0;
+}
+
+.Search-legend {
+  font-size: 2rem;
+}
+
+.Search-fields {
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+}
+
+.Search-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Search-input,
+.Search-submit {
+  flex-grow: 1;
+}
+
+@media (min-width: 40em) {
+  .Search-row {
+    flex-wrap: nowrap;
+  }
+
+  .Search-submit {
+    flex-grow: 0;
+  }
+}

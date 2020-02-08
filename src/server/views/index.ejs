@@ -6,6 +6,17 @@
   </head>
   <body>
     <div class="Wrapper">
+      <% if (showBack) { %>
+        <p><a href="/" class="Link-back">&larr; Go back to catalogue</a></p>
+      <% } %>
+      <h1>StarWars Characters Catalogue</h1>
+      <%- include('components/Search', { 
+        action: '/search', 
+        ariaLabel: 'Search character', 
+        name: 'character', 
+        placeholder: 'type name...', 
+        search,
+      }); %>
       <section>
         <ul class="List Grid">
           <% data.results.map(person => { %>
