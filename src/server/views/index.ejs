@@ -5,6 +5,22 @@
     <script src="/main.js"></script>
   </head>
   <body>
-    Hello StarWars!
+    <div class="Wrapper">
+      <section>
+        <ul class="List Grid">
+          <% data.results.map(person => { %>
+          <li class="Grid-cell Cell-1of2">
+            <%- include('components/CharacterCard', {person}); %>
+          </li>
+          <% }); %>
+        </ul>
+
+        <% if (!data.results.length) { %>
+        <div class="Empty">
+          <p>There is no characters to show.</p>
+        </div>
+        <% }; %>
+      </section>
+    </div>
   </body>
 </html>
