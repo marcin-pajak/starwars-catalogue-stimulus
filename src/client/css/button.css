@@ -11,6 +11,11 @@
   will-change: background, border-color, color, transform;
 }
 
+.Button:hover,
+.Button:focus {
+  text-decoration: none;
+}
+
 .Button[disabled] {
   opacity: 0.21;
 }

@@ -20,17 +20,30 @@
       <section>
         <ul class="List Grid">
           <% data.results.map(person => { %>
-          <li class="Grid-cell Cell-1of2">
-            <%- include('components/CharacterCard', {getIdFromUrl, person}); %>
-          </li>
+            <li class="Grid-cell Cell-1of2">
+              <%- include('components/CharacterCard', {getIdFromUrl, person}); %>
+            </li>
           <% }); %>
         </ul>
 
         <% if (!data.results.length) { %>
-        <div class="Empty">
-          <p>There is no characters to show.</p>
-        </div>
+          <div class="Empty">
+            <p>There is no characters to show.</p>
+          </div>
         <% }; %>
+
+        <div class="Pagination u-text--center">
+          <% if (previousLink) { %>
+            <a href="<%= previousLink %>" class="Button Button--primary"
+              >Previous</a
+            >
+          <% }; %> 
+          <% if (nextLink) { %>
+            <a href="<%= nextLink %>" class="Button Button--primary"
+              >Next</a
+            >
+          <% }; %>
+        </div>
       </section>
     </div>
   </body>
