@@ -1,3 +1,5 @@
+import Turbolinks from 'turbolinks';
+
 import './main.css';
 
-console.log('StarWars!');
+Turbolinks.start();

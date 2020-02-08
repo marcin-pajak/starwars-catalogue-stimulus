@@ -9,9 +9,13 @@
       <% if (showBack) { %>
         <p><a href="/" class="Link-back">&larr; Go back to catalogue</a></p>
       <% } %>
-      <div><a href="#characters" class="Skipping">Skip search and go to character list</a></div>
+      <div>
+        <a data-turbolinks="false" href="#characters" class="Skipping">Skip search and go to character list</a>
+      </div>
       <% if (previousLink || nextLink) { %>
-        <div><a href="#pagination" class="Skipping">Skip content and go to pagination</a></div>
+        <div>
+          <a data-turbolinks="false" href="#pagination" class="Skipping">Skip content and go to pagination</a>
+        </div>
       <% } %>
       <h1>StarWars Characters Catalogue</h1>
       <%- include('components/Search', { 
