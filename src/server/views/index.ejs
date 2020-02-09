@@ -2,7 +2,7 @@
 <html lang="<%= lang %>">
   <head>
     <%- include('layout/header'); %>
-    <script src="/main.js"></script>
+    <script src="/main.js" defer></script>
   </head>
   <body>
     <div class="Wrapper">
@@ -36,7 +36,7 @@
 
         <% if (!data.results.length) { %>
           <div class="Empty">
-            <p>There is no characters to show.</p>
+            <p>There are no characters to show.</p>
           </div>
         <% }; %>
 

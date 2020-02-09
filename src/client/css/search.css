@@ -30,3 +30,48 @@
     flex-grow: 0;
   }
 }
+
+.Search-voiceButton {
+  display: none;
+}
+
+.Search-voiceButton.is-supported {
+  display: inline-block;
+}
+
+.Search-icon {
+  transition: 0.3s filter ease;
+}
+
+.is-active > .Search-icon,
+.Button:hover > .Search-icon,
+.Button:focus > .Search-icon,
+.Button:active > .Search-icon {
+  filter: invert(1);
+}
+
+.is-active > .Search-icon,
+.Button:active > .Search-icon {
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1);
+  animation: pulse 2s infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.92);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+  }
+
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.92);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}

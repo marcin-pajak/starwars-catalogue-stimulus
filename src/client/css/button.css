@@ -30,13 +30,13 @@
 }
 
 .Button--primary:hover,
-.Button--primary:focus {
+.Button--primary:focus,
+.Button--primary.is-active {
   color: #fff;
   background: var(--color-active);
   border-color: var(--color-active);
 }
 
-.Button--primary:active,
-.Button--primary.is-active {
+.Button--primary:active {
   transform: translate(1px, 2px);
 }
