@@ -1,0 +1,12 @@
+<section class="Homies" aria-labelledby="homies-title">
+  <h3 class="Homies-title" id="homies-title">
+    Fellow planetarians:
+  </h3>
+  <ul class="Homies-characters List Grid">
+    <% data.map(person => { %>
+      <li class="Grid-cell Cell-1of3">
+        <%- include('components/CharacterCard', {person}); %>
+      </li>
+    <% }); %>
+  </ul>
+</section>

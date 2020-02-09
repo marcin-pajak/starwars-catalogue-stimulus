@@ -42,6 +42,11 @@
           }); %>
         </dl>
       </main>
+      <div 
+        data-controller="load" 
+        data-load-save-bandwidth="true"
+        data-load-url="/homies?characterId=<%= personId %>&planetId=<%= planetId %>"
+      ></div>
     </div>
   </body>
 </html>

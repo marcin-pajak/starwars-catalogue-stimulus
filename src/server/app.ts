@@ -26,6 +26,7 @@ app.use(
   }
 );
 
+app.use('/homies', routes.homies);
 app.use('/', routes.characters);
 app.use('/character', routes.character);
 
