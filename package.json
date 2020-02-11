@@ -13,7 +13,7 @@
     "dev:start": "npm-run-all build start",
     "dev": "nodemon --watch src -e ts,ejs,css --exec npm run dev:start",
     "start": "node .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Marcin Pajak",
   "license": "ISC",
@@ -31,19 +31,42 @@
     "@types/express": "^4.17.2",
     "@types/fs-extra": "^8.0.1",
     "@types/http-errors": "^1.6.3",
+    "@types/jest": "^25.1.2",
     "@types/node": "^13.7.0",
     "@types/node-cache": "^4.2.5",
     "@types/node-fetch": "^2.5.4",
     "@types/shelljs": "^0.8.6",
     "@types/turbolinks": "^5.2.0",
+    "babel-jest": "^25.1.0",
     "fs-extra": "^8.1.0",
+    "isomorphic-fetch": "^2.2.1",
+    "jest": "^25.1.0",
+    "mutationobserver-shim": "^0.3.3",
     "nodemon": "^2.0.2",
     "npm-run-all": "^4.1.5",
     "parcel-bundler": "^1.12.4",
     "rimraf": "^3.0.1",
     "shelljs": "^0.8.3",
+    "speech-recognition-mock": "0.0.9",
+    "ts-jest": "^25.2.0",
     "ts-node": "^8.6.2",
     "tslint": "^6.0.0",
     "typescript": "^3.7.5"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.ts?$": "ts-jest",
+      "^.+\\.js?$": "babel-jest"
+    },
+    "setupFiles": [
+      "./test/setupClientTests.ts"
+    ],
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "clover"
+    ]
   }
 }

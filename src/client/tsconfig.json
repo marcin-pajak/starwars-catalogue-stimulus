@@ -9,5 +9,6 @@
     "moduleResolution": "node",
     "outDir": "./dist/public",
     "sourceMap": true
-  }
+  },
+  "exclude": ["**/*.spec.ts"]
 }
