@@ -22,7 +22,7 @@ export default class extends Controller {
       !this.data.has('saveBandwidth') ||
       FAST_CONNECTIONS.includes(effectiveType)
     ) {
-      this.load();
+      return this.load();
     }
   }
 
